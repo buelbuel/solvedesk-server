@@ -13,7 +13,7 @@ import { Contact } from './contact.entity'
 
 /**
  * Represents a account.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -79,9 +79,9 @@ export class Account {
 	@OneToMany(() => Contact, contact => contact.account)
 	contacts: Contact[]
 
-	@ManyToOne(() => User, (user) => user.createdAccounts, { nullable: false })
+	@ManyToOne(() => User, user => user.createdAccounts, { nullable: false })
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedAccounts, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedAccounts, { nullable: true })
 	updatedBy: User
 }

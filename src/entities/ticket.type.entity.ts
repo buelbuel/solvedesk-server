@@ -14,7 +14,7 @@ import { User } from './user.entity'
 
 /**
  * Represents a support tickets type.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -29,10 +29,14 @@ export class TicketType {
 	@Column({ length: 255, nullable: true })
 	description: string | null
 
-	@ManyToOne(() => TicketCategory, (ticketCategory) => ticketCategory.ticketTypes, { nullable: false })
+	@ManyToOne(
+		() => TicketCategory,
+		ticketCategory => ticketCategory.ticketTypes,
+		{ nullable: false }
+	)
 	ticketCategory: TicketCategory
 
-	@OneToMany(() => Ticket, (ticket) => ticket.type)
+	@OneToMany(() => Ticket, ticket => ticket.type)
 	tickets: Ticket[]
 
 	@CreateDateColumn({ nullable: false })
@@ -44,9 +48,9 @@ export class TicketType {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@ManyToOne(() => User, (user) => user.createdTicketTypes, { nullable: false })
+	@ManyToOne(() => User, user => user.createdTicketTypes, { nullable: false })
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedTicketTypes, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedTicketTypes, { nullable: true })
 	updatedBy: User
 }

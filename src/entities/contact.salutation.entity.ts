@@ -5,13 +5,13 @@ import {
 	CreateDateColumn,
 	DeleteDateColumn,
 	UpdateDateColumn,
-	ManyToOne,
+	ManyToOne
 } from 'typeorm'
 import { User } from './user.entity'
 
 /**
  * Represents a contacts salutation.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 @Entity()
@@ -34,9 +34,9 @@ export class ContactSalutation {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@ManyToOne(() => User, (user) => user.createdSalutations, { nullable: false })
+	@ManyToOne(() => User, user => user.createdSalutations, { nullable: false })
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedSalutations, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedSalutations, { nullable: true })
 	updatedBy: User
 }

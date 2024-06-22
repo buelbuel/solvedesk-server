@@ -5,7 +5,7 @@ import {
 	ManyToOne,
 	CreateDateColumn,
 	UpdateDateColumn,
-	DeleteDateColumn,
+	DeleteDateColumn
 } from 'typeorm'
 import { User } from './user.entity'
 import { TicketType } from './ticket.type.entity'
@@ -17,7 +17,7 @@ import { TicketCategory } from './ticket.category.entity'
 
 /**
  * Represents a support ticket.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 @Entity()
@@ -49,33 +49,43 @@ export class Ticket {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@ManyToOne(() => Contact, (contact) => contact.tickets, { nullable: true })
+	@ManyToOne(() => Contact, contact => contact.tickets, { nullable: true })
 	contact: Contact
 
-	@ManyToOne(() => TicketPriority, (ticketPriority) => ticketPriority.tickets, { nullable: true })
+	@ManyToOne(() => TicketPriority, ticketPriority => ticketPriority.tickets, {
+		nullable: true
+	})
 	priority: TicketPriority
 
-	@ManyToOne(() => TicketCategory, (ticketCategory) => ticketCategory.tickets, { nullable: true })
+	@ManyToOne(() => TicketCategory, ticketCategory => ticketCategory.tickets, {
+		nullable: true
+	})
 	category: TicketCategory
 
-	@ManyToOne(() => TicketType, (ticketType) => ticketType.tickets, { nullable: true })
+	@ManyToOne(() => TicketType, ticketType => ticketType.tickets, {
+		nullable: true
+	})
 	type: TicketType
 
-	@ManyToOne(() => TicketStatus, (ticketStatus) => ticketStatus.tickets, { nullable: true })
+	@ManyToOne(() => TicketStatus, ticketStatus => ticketStatus.tickets, {
+		nullable: true
+	})
 	status: TicketStatus
 
-	@ManyToOne(() => Organization, (organization) => organization.tickets, { nullable: false })
+	@ManyToOne(() => Organization, organization => organization.tickets, {
+		nullable: false
+	})
 	organization: Organization
 
-	@ManyToOne(() => User, (user) => user.assignedTickets, { nullable: true })
+	@ManyToOne(() => User, user => user.assignedTickets, { nullable: true })
 	assignedTo: User
 
-	@ManyToOne(() => User, (user) => user.closedTickets, { nullable: true })
+	@ManyToOne(() => User, user => user.closedTickets, { nullable: true })
 	closedBy: User
 
-	@ManyToOne(() => User, (user) => user.createdTickets, { nullable: false })
+	@ManyToOne(() => User, user => user.createdTickets, { nullable: false })
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedTickets, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedTickets, { nullable: true })
 	updatedBy: User
 }

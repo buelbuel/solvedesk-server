@@ -13,7 +13,7 @@ import { User } from './user.entity'
 
 /**
  * Represents a support tickets priority.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 @Entity()
@@ -24,7 +24,7 @@ export class TicketPriority {
 	@Column({ length: 255, nullable: false })
 	name: string
 
-	@OneToMany(() => Ticket, (ticket) => ticket.priority)
+	@OneToMany(() => Ticket, ticket => ticket.priority)
 	tickets: Ticket[]
 
 	@CreateDateColumn({ nullable: false })
@@ -36,9 +36,13 @@ export class TicketPriority {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@ManyToOne(() => User, (user) => user.createdTicketPriorities, { nullable: false })
+	@ManyToOne(() => User, user => user.createdTicketPriorities, {
+		nullable: false
+	})
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedTicketPriorities, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedTicketPriorities, {
+		nullable: true
+	})
 	updatedBy: User
 }

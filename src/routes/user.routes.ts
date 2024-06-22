@@ -1,5 +1,10 @@
 import { Router } from 'express'
-import { listAll, getOneById, editUser, deleteUser } from '../controllers/user.controller'
+import {
+	listAll,
+	getOneById,
+	editUser,
+	deleteUser
+} from '../controllers/user.controller'
 import { checkJwt } from '../middlewares/checkJwt.middleware'
 import { checkRole } from '../middlewares/checkRole.middleware'
 

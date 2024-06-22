@@ -15,7 +15,7 @@ import { ContactSalutation } from './contact.salutation.entity'
 
 /**
  * Represents a contact.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -60,12 +60,11 @@ export class Contact {
 	@OneToMany(() => Ticket, ticket => ticket.contact)
 	tickets: Ticket[]
 
-
-/**
- * Represents a support tickets priority.
- * 
- * @file controllers/entities/ticket.entity.ts
- */
+	/**
+	 * Represents a support tickets priority.
+	 *
+	 * @file controllers/entities/ticket.entity.ts
+	 */
 	@Column({ length: 255, nullable: true })
 	title: string
 
@@ -75,9 +74,9 @@ export class Contact {
 	@ManyToOne(() => ContactSalutation)
 	salutation: ContactSalutation
 
-	@ManyToOne(() => User, (user) => user.createdContacts, { nullable: false })
+	@ManyToOne(() => User, user => user.createdContacts, { nullable: false })
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedContacts, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedContacts, { nullable: true })
 	updatedBy: User
 }

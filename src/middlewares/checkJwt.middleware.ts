@@ -1,9 +1,9 @@
-import { Request, Response, NextFunction } from "express"
-import * as jwt from "jsonwebtoken"
+import { Request, Response, NextFunction } from 'express'
+import * as jwt from 'jsonwebtoken'
 import 'dotenv/config'
 
 export const checkJwt = (req: Request, res: Response, next: NextFunction) => {
-	const token = <string>req.headers["auth"]
+	const token = <string>req.headers['auth']
 	let jwtPayload: { userId: any; username: any }
 
 	try {
@@ -16,9 +16,9 @@ export const checkJwt = (req: Request, res: Response, next: NextFunction) => {
 
 	const { userId, username } = jwtPayload
 	const newToken = jwt.sign({ userId, username }, process.env.JWT_SECRET, {
-		expiresIn: "1h"
+		expiresIn: '1h'
 	})
-	res.setHeader("token", newToken)
+	res.setHeader('token', newToken)
 
 	next()
 }

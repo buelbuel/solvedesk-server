@@ -6,9 +6,9 @@ import {
 	OneToMany,
 	CreateDateColumn,
 	DeleteDateColumn,
-	UpdateDateColumn,
+	UpdateDateColumn
 } from 'typeorm'
-import { Length, IsNotEmpty } from "class-validator"
+import { Length, IsNotEmpty } from 'class-validator'
 import * as bcrypt from 'bcrypt'
 import { Organization } from './organization.entity'
 import { Ticket } from './ticket.entity'
@@ -17,7 +17,7 @@ import { Contact } from './contact.entity'
 
 /**
  * Represents a user.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -53,76 +53,76 @@ export class User {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@OneToMany(() => Ticket, (ticket) => ticket.assignedTo)
+	@OneToMany(() => Ticket, ticket => ticket.assignedTo)
 	assignedTickets: Ticket[]
 
-	@OneToMany(() => Account, (account) => account.assignedTo)
+	@OneToMany(() => Account, account => account.assignedTo)
 	accounts: Account[]
 
-	@OneToMany(() => Contact, (contact) => contact.assignedTo)
+	@OneToMany(() => Contact, contact => contact.assignedTo)
 	contacts: Contact[]
 
-	@ManyToOne(() => Organization, (organization) => organization.users)
+	@ManyToOne(() => Organization, organization => organization.users)
 	organization: Organization
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdAccounts: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedAccounts: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdContacts: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedContacts: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedOrganizations: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdSalutations: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedSalutations: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdTickets: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedTickets: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.closedBy)
+	@OneToMany(() => Ticket, ticket => ticket.closedBy)
 	closedTickets: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdTicketCategories: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedTicketCategories: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdTicketPriorities: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedTicketPriorities: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdTicketStatuses: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedTicketStatuses: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.createdBy)
+	@OneToMany(() => Ticket, ticket => ticket.createdBy)
 	createdTicketTypes: Ticket[]
 
-	@OneToMany(() => Ticket, (ticket) => ticket.updatedBy)
+	@OneToMany(() => Ticket, ticket => ticket.updatedBy)
 	updatedTicketTypes: Ticket[]
 
-	@OneToMany(() => User, (user) => user.updatedBy)
+	@OneToMany(() => User, user => user.updatedBy)
 	updatedUsers: User[]
 
-	@ManyToOne(() => User, (user) => user.updatedUsers, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedUsers, { nullable: true })
 	updatedBy: User
 
 	hashPassword() {

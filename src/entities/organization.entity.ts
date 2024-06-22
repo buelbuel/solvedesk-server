@@ -4,14 +4,14 @@ import {
 	Column,
 	OneToMany,
 	ManyToOne,
-	UpdateDateColumn,
+	UpdateDateColumn
 } from 'typeorm'
 import { User } from './user.entity'
 import { Ticket } from './ticket.entity'
 
 /**
  * Represents an organziation.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -47,6 +47,8 @@ export class Organization {
 	@OneToMany(() => Ticket, ticket => ticket.organization)
 	tickets: Ticket[]
 
-	@ManyToOne(() => User, (user) => user.updatedOrganizations, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedOrganizations, {
+		nullable: true
+	})
 	updatedBy: User
 }

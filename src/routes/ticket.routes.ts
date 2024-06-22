@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import { createTicket, getTickets } from '../controllers/ticket.controller';
+import { Router } from 'express'
+import { createTicket, getTickets } from '../controllers/ticket.controller'
 
-const router = Router();
+const router = Router()
 
-router.post('/', createTicket);
-router.get('/', getTickets);
+router.post('/', createTicket)
+router.get('/', getTickets)
 
-export default router;
+export default router

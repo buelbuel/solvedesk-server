@@ -13,7 +13,7 @@ import { User } from './user.entity'
 
 /**
  * Represents a support tickets status.
- * 
+ *
  * @file controllers/entities/ticket.entity.ts
  */
 
@@ -25,7 +25,7 @@ export class TicketStatus {
 	@Column({ length: 255, nullable: false })
 	name: string
 
-	@OneToMany(() => Ticket, (ticket) => ticket.status)
+	@OneToMany(() => Ticket, ticket => ticket.status)
 	tickets: Ticket[]
 
 	@CreateDateColumn({ nullable: false })
@@ -37,9 +37,13 @@ export class TicketStatus {
 	@DeleteDateColumn({ nullable: true })
 	deletedAt: Date
 
-	@ManyToOne(() => User, (user) => user.createdTicketStatuses, { nullable: false })
+	@ManyToOne(() => User, user => user.createdTicketStatuses, {
+		nullable: false
+	})
 	createdBy: User
 
-	@ManyToOne(() => User, (user) => user.updatedTicketStatuses, { nullable: true })
+	@ManyToOne(() => User, user => user.updatedTicketStatuses, {
+		nullable: true
+	})
 	updatedBy: User
 }
