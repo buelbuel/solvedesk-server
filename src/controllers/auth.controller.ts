@@ -4,6 +4,10 @@ import { AuthService } from '../services/auth.service'
 
 const authService = new AuthService()
 
+/**
+ * 
+ * @source controllers/auth.controller.ts
+ */
 export class AuthController {
 	static register = async (req: Request, res: Response) => {
 		const { email, password, firstName, lastName } = req.body

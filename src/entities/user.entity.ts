@@ -18,9 +18,8 @@ import { Contact } from './contact.entity'
 /**
  * Represents a user.
  *
- * @file controllers/entities/ticket.entity.ts
+ * @source controllers/entities/ticket.entity.ts
  */
-
 @Entity({ name: 'user' })
 export class User {
 	@PrimaryGeneratedColumn('uuid')

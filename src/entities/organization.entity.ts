@@ -14,7 +14,6 @@ import { Ticket } from './ticket.entity'
  *
  * @file controllers/entities/ticket.entity.ts
  */
-
 @Entity()
 export class Organization {
 	@PrimaryGeneratedColumn('uuid')

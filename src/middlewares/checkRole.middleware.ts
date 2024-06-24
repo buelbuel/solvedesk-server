@@ -2,6 +2,10 @@ import { Request, Response, NextFunction } from 'express'
 import { AppDataSource } from '../data-source'
 import { User } from '../entities/user.entity'
 
+/**
+ * 
+ * @source controllers/checkRole.middleware.ts
+ */
 export const checkRole = (roles: Array<string>) => {
 	return async (req: Request, res: Response, next: NextFunction) => {
 		const id = res.locals.jwtPayload.userId

@@ -2,6 +2,10 @@ import { Request, Response, NextFunction } from 'express'
 import * as jwt from 'jsonwebtoken'
 import 'dotenv/config'
 
+/**
+ * 
+ * @source controllers/checkJwt.middleware.ts
+ */
 export const checkJwt = (req: Request, res: Response, next: NextFunction) => {
 	const token = <string>req.headers['auth']
 	let jwtPayload: { userId: any; username: any }

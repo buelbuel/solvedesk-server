@@ -3,6 +3,10 @@ import { OrganizationService } from '../services/organization.service'
 
 const organizationService = new OrganizationService()
 
+/**
+ * 
+ * @source controllers/organization.controller.ts
+ */
 export const createOrganization = async (req: Request, res: Response) => {
 	try {
 		const newOrganization = await organizationService.createOrganization(

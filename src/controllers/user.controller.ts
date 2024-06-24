@@ -3,6 +3,10 @@ import { UserService } from '../services/user.service'
 
 const userService = new UserService()
 
+/**
+ * 
+ * @source controllers/user.controller.ts
+ */
 export const getOneById = async (req: Request, res: Response) => {
 	const { id } = req.params
 	try {

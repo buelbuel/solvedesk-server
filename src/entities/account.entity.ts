@@ -16,7 +16,6 @@ import { Contact } from './contact.entity'
  *
  * @file controllers/entities/ticket.entity.ts
  */
-
 @Entity()
 export class Account {
 	@PrimaryGeneratedColumn('uuid')

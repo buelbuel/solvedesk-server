@@ -18,7 +18,6 @@ import { ContactSalutation } from './contact.salutation.entity'
  *
  * @file controllers/entities/ticket.entity.ts
  */
-
 @Entity()
 export class Contact {
 	@PrimaryGeneratedColumn('uuid')

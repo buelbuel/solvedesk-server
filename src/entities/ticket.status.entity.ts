@@ -16,7 +16,6 @@ import { User } from './user.entity'
  *
  * @file controllers/entities/ticket.entity.ts
  */
-
 @Entity()
 export class TicketStatus {
 	@PrimaryGeneratedColumn('uuid')
