@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import {
-	listAll,
+	getUsers,
 	getOneById,
 	editUser,
 	deleteUser
@@ -11,10 +11,10 @@ import { checkRole } from '../middlewares/checkRole.middleware'
 const router = Router()
 
 //Get all users
-router.get('/', [checkJwt, checkRole(['ADMIN'])], listAll)
+router.get('/', [checkJwt, checkRole(['ADMIN'])], getUsers)
 
 // Get one user
-router.get('/:id([0-9]+)', [checkJwt, checkRole(['ADMIN'])], getOneById)
+router.get('/:id', [checkJwt], getOneById)
 
 //Edit one user
 router.patch('/:id([0-9]+)', [checkJwt, checkRole(['ADMIN'])], editUser)

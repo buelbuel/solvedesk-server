@@ -14,7 +14,7 @@ export const AppDataSource = new DataSource({
 	schema: process.env.TYPEORM_SCHEMA || 'public',
 	entities: [path.join(__dirname, '**', '*.entity.{ts,js}')],
 	synchronize: process.env.TYPEORM_SYNCHRONIZE === 'true',
-	logging: process.env.TYPEORM_LOGGING === 'true',
+	logging: process.env.TYPEORM_LOGGING === 'false',
 	migrations: [],
 	subscribers: []
 })

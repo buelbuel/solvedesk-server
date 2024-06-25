@@ -7,6 +7,10 @@ import { z } from 'zod'
 import { User } from '../entities/user.entity'
 import 'dotenv/config'
 
+/**
+ * 
+ * @source services/auth.service.ts
+ */
 export class AuthService {
 	private userRepository = AppDataSource.getRepository(User)
 	private jwtSecret = process.env.JWT_SECRET
@@ -58,7 +62,6 @@ export class AuthService {
 		} catch (error) {
 			console.error('Error creating user:', error)
 			if (error.code === '23505') {
-				// PostgreSQL unique constraint violation
 				throw new Error('Email already in use')
 			}
 			throw new Error('An error occurred during user creation')

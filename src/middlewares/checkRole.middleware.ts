@@ -3,8 +3,10 @@ import { AppDataSource } from '../data-source'
 import { User } from '../entities/user.entity'
 
 /**
- * 
+ *
  * @source controllers/checkRole.middleware.ts
+ * TODO: Admin can invite, manage users
+ * TODO: When User with same Organization registers, Role is pending, needs to be approved by Org Admin
  */
 export const checkRole = (roles: Array<string>) => {
 	return async (req: Request, res: Response, next: NextFunction) => {

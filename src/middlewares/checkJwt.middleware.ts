@@ -3,19 +3,18 @@ import * as jwt from 'jsonwebtoken'
 import 'dotenv/config'
 
 /**
- * 
+ *
  * @source controllers/checkJwt.middleware.ts
  */
 export const checkJwt = (req: Request, res: Response, next: NextFunction) => {
-	const token = <string>req.headers['auth']
+	const token = <string>req.headers['authorization']
 	let jwtPayload: { userId: any; username: any }
 
 	try {
 		jwtPayload = <any>jwt.verify(token, process.env.JWT_SECRET)
 		res.locals.jwtPayload = jwtPayload
 	} catch (error) {
-		res.status(401).send()
-		return
+		return res.status(401).send()
 	}
 
 	const { userId, username } = jwtPayload
