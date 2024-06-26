@@ -8,12 +8,14 @@ import { User } from '../entities/user.entity'
 import 'dotenv/config'
 
 /**
- * 
+ *
  * @source services/auth.service.ts
  */
 export class AuthService {
 	private userRepository = AppDataSource.getRepository(User)
 	private jwtSecret = process.env.JWT_SECRET
+	private refreshTokenSecret = process.env.REFRESH_TOKEN_SECRET!
+	private refreshTokenExpiry = '7d'
 
 	async createUser(
 		email: string,
@@ -68,26 +70,47 @@ export class AuthService {
 		}
 	}
 
-	async validateUser(email: string, password: string): Promise<string> {
+	async validateUser(
+		email: string,
+		password: string
+	): Promise<{ accessToken: string; refreshToken: string }> {
+		const user = await this.userRepository.findOneBy({ email })
+		if (!user) {
+			throw new Error('User not found')
+		}
+
+		const validPassword = await bcrypt.compare(password, user.password)
+		if (!validPassword) {
+			throw new Error('Invalid password')
+		}
+
+		const payload = { userId: user.id, email: user.email, role: user.role }
+		const accessToken = jwt.sign(payload, this.jwtSecret, {
+			expiresIn: '1h'
+		})
+		const refreshToken = jwt.sign(payload, this.refreshTokenSecret, {
+			expiresIn: this.refreshTokenExpiry
+		})
+
+		return { accessToken, refreshToken }
+	}
+
+	async refreshAccessToken(refreshToken: string): Promise<string> {
 		try {
-			const user = await this.userRepository.findOneBy({ email })
-			if (!user) {
-				throw new Error('User not found')
-			}
+			const payload = jwt.verify(
+				refreshToken,
+				this.refreshTokenSecret
+			) as any
 
-			const validPassword = await bcrypt.compare(password, user.password)
-			if (!validPassword) {
-				throw new Error('Invalid password')
-			}
-
-			return jwt.sign(
-				{ userId: user.id, email: user.email },
+			const accessToken = jwt.sign(
+				{ userId: payload.userId, email: payload.email },
 				this.jwtSecret,
 				{ expiresIn: '1h' }
 			)
+
+			return accessToken
 		} catch (error) {
-			console.error('Error validating user:', error)
-			throw new Error('An error occurred during user validation')
+			throw new Error('Invalid refresh token')
 		}
 	}
 

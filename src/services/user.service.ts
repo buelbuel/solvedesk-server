@@ -20,14 +20,17 @@ export class UserService {
 		}
 	}
 
-	async getUsers(page: number = 1, pageSize: number = 20): Promise<{ users: User[], totalPages: number }> {
+	async getUsers(
+		page: number = 1,
+		pageSize: number = 20
+	): Promise<{ users: User[]; totalPages: number }> {
 		const [users, totalUsers] = await this.userRepository.findAndCount({
 			skip: (page - 1) * pageSize,
 			take: pageSize
-		  })
-	  
-		  const totalPages = Math.ceil(totalUsers / pageSize)
-		  return { users, totalPages }
+		})
+
+		const totalPages = Math.ceil(totalUsers / pageSize)
+		return { users, totalPages }
 	}
 
 	async editUser(

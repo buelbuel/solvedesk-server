@@ -33,7 +33,17 @@ export class AuthController {
 			res.status(401).json({ error: error.message })
 		}
 	}
-
+	
+	static refreshToken = async (req: Request, res: Response) => {
+		try {
+		  const { refreshToken } = req.body;
+		  const newAccessToken = await authService.refreshAccessToken(refreshToken);
+		  res.json({ accessToken: newAccessToken });
+		} catch (error) {
+		  res.status(401).json({ error: error.message });
+		}
+	  }
+	  
 	static changePassword = async (req: Request, res: Response) => {
 		try {
 			await authService.changePassword(req, res)

@@ -4,7 +4,7 @@ import { UserService } from '../services/user.service'
 const userService = new UserService()
 
 /**
- * 
+ *
  * @source controllers/user.controller.ts
  */
 export const getOneById = async (req: Request, res: Response) => {
@@ -22,14 +22,10 @@ export const getOneById = async (req: Request, res: Response) => {
 
 export const getUsers = async (req: Request, res: Response) => {
 	try {
-		
 		const page = parseInt(req.query.page as string) || 1
 		const pageSize = parseInt(req.query.pageSize as string) || 20
 
-		const { users, totalPages } = await userService.getUsers(
-			page,
-			pageSize
-		)
+		const { users, totalPages } = await userService.getUsers(page, pageSize)
 
 		res.status(200).json({ users, totalPages })
 	} catch (error) {
