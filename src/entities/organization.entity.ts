@@ -1,11 +1,4 @@
-import {
-	Entity,
-	PrimaryGeneratedColumn,
-	Column,
-	OneToMany,
-	ManyToOne,
-	UpdateDateColumn
-} from 'typeorm'
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne, UpdateDateColumn } from 'typeorm'
 import { User } from './user.entity'
 import { Ticket } from './ticket.entity'
 

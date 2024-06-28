@@ -20,10 +20,7 @@ export class UserService {
 		}
 	}
 
-	async getUsers(
-		page: number = 1,
-		pageSize: number = 20
-	): Promise<{ users: User[]; totalPages: number }> {
+	async getUsers(page: number = 1, pageSize: number = 20): Promise<{ users: User[]; totalPages: number }> {
 		const [users, totalUsers] = await this.userRepository.findAndCount({
 			skip: (page - 1) * pageSize,
 			take: pageSize
@@ -33,10 +30,7 @@ export class UserService {
 		return { users, totalPages }
 	}
 
-	async editUser(
-		id: string,
-		userDetails: Partial<User>
-	): Promise<User | undefined> {
+	async editUser(id: string, userDetails: Partial<User>): Promise<User | undefined> {
 		const idSchema = z.string().uuid()
 		const userSchema = z.object({
 			email: z.string().email().optional(),

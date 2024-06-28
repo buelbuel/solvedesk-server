@@ -1,0 +1,19 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+	"mainEntryPointFilePath": "<projectFolder>/lib/index.d.ts",
+	"dtsRollup": {
+		"publicTrimmedFilePath": "<projectFolder>/lib/index.d.ts",
+		"omitTrimmingComments": true,
+		"enabled": true
+	},
+	"docModel": {
+		"enabled": true
+	},
+	"apiReport": {
+		"enabled": true,
+		"reportFolder": "./temp"
+	},
+	"tsdocMetadata": {
+		"enabled": true
+	}
+}

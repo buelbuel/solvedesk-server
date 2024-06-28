@@ -4,14 +4,12 @@ import { OrganizationService } from '../services/organization.service'
 const organizationService = new OrganizationService()
 
 /**
- * 
+ *
  * @source controllers/organization.controller.ts
  */
 export const createOrganization = async (req: Request, res: Response) => {
 	try {
-		const newOrganization = await organizationService.createOrganization(
-			req.body
-		)
+		const newOrganization = await organizationService.createOrganization(req.body)
 		res.status(201).json(newOrganization)
 	} catch (error) {
 		res.status(400).json({ error: error.message })

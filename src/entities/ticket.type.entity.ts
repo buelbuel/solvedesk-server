@@ -28,11 +28,7 @@ export class TicketType {
 	@Column({ length: 255, nullable: true })
 	description: string | null
 
-	@ManyToOne(
-		() => TicketCategory,
-		ticketCategory => ticketCategory.ticketTypes,
-		{ nullable: false }
-	)
+	@ManyToOne(() => TicketCategory, ticketCategory => ticketCategory.ticketTypes, { nullable: false })
 	ticketCategory: TicketCategory
 
 	@OneToMany(() => Ticket, ticket => ticket.type)

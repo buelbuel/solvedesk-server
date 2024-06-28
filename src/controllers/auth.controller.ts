@@ -5,19 +5,14 @@ import { AuthService } from '../services/auth.service'
 const authService = new AuthService()
 
 /**
- * 
+ *
  * @source controllers/auth.controller.ts
  */
 export class AuthController {
 	static register = async (req: Request, res: Response) => {
 		const { email, password, firstName, lastName } = req.body
 		try {
-			const newUser = await authService.createUser(
-				email,
-				password,
-				firstName,
-				lastName
-			)
+			const newUser = await authService.createUser(email, password, firstName, lastName)
 			res.status(201).json(newUser)
 		} catch (error) {
 			res.status(409).json({ error: error.message })
@@ -33,17 +28,17 @@ export class AuthController {
 			res.status(401).json({ error: error.message })
 		}
 	}
-	
+
 	static refreshToken = async (req: Request, res: Response) => {
 		try {
-		  const { refreshToken } = req.body;
-		  const newAccessToken = await authService.refreshAccessToken(refreshToken);
-		  res.json({ accessToken: newAccessToken });
+			const { refreshToken } = req.body
+			const newAccessToken = await authService.refreshAccessToken(refreshToken)
+			res.json({ accessToken: newAccessToken })
 		} catch (error) {
-		  res.status(401).json({ error: error.message });
+			res.status(401).json({ error: error.message })
 		}
-	  }
-	  
+	}
+
 	static changePassword = async (req: Request, res: Response) => {
 		try {
 			await authService.changePassword(req, res)

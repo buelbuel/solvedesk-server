@@ -17,12 +17,7 @@ export class AuthService {
 	private refreshTokenSecret = process.env.REFRESH_TOKEN_SECRET!
 	private refreshTokenExpiry = '7d'
 
-	async createUser(
-		email: string,
-		password: string,
-		firstName: string,
-		lastName: string
-	): Promise<User> {
+	async createUser(email: string, password: string, firstName: string, lastName: string): Promise<User> {
 		try {
 			const schema = z.object({
 				email: z.string().email(),
@@ -38,10 +33,7 @@ export class AuthService {
 				lastName
 			})
 			if (!result.success) {
-				throw new Error(
-					'Invalid input: ' +
-						result.error.errors.map(err => err.message).join(', ')
-				)
+				throw new Error('Invalid input: ' + result.error.errors.map(err => err.message).join(', '))
 			}
 
 			const user = new User()
@@ -54,10 +46,7 @@ export class AuthService {
 
 			const errors = await validate(user)
 			if (errors.length > 0) {
-				throw new Error(
-					'Validation failed: ' +
-						errors.map(err => err.toString()).join(', ')
-				)
+				throw new Error('Validation failed: ' + errors.map(err => err.toString()).join(', '))
 			}
 
 			return await this.userRepository.save(user)
@@ -70,10 +59,7 @@ export class AuthService {
 		}
 	}
 
-	async validateUser(
-		email: string,
-		password: string
-	): Promise<{ accessToken: string; refreshToken: string }> {
+	async validateUser(email: string, password: string): Promise<{ accessToken: string; refreshToken: string }> {
 		const user = await this.userRepository.findOneBy({ email })
 		if (!user) {
 			throw new Error('User not found')
@@ -97,16 +83,11 @@ export class AuthService {
 
 	async refreshAccessToken(refreshToken: string): Promise<string> {
 		try {
-			const payload = jwt.verify(
-				refreshToken,
-				this.refreshTokenSecret
-			) as any
+			const payload = jwt.verify(refreshToken, this.refreshTokenSecret) as any
 
-			const accessToken = jwt.sign(
-				{ userId: payload.userId, email: payload.email },
-				this.jwtSecret,
-				{ expiresIn: '1h' }
-			)
+			const accessToken = jwt.sign({ userId: payload.userId, email: payload.email }, this.jwtSecret, {
+				expiresIn: '1h'
+			})
 
 			return accessToken
 		} catch (error) {
@@ -141,10 +122,7 @@ export class AuthService {
 				return
 			}
 
-			const validPassword = await bcrypt.compare(
-				oldPassword,
-				user.password
-			)
+			const validPassword = await bcrypt.compare(oldPassword, user.password)
 			if (!validPassword) {
 				res.status(401).send('Invalid old password')
 				return

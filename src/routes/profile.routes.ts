@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import { getCurrentUser } from '../controllers/profile.controller';
-import { checkJwt } from '../middlewares/checkJwt.middleware';
+import { Router } from 'express'
+import { getCurrentUser } from '../controllers/profile.controller'
+import { checkJwt } from '../middlewares/checkJwt.middleware'
 
-const profileRouter = Router();
+const profileRouter = Router()
 
-profileRouter.get('/', [checkJwt], getCurrentUser);
+profileRouter.get('/', [checkJwt], getCurrentUser)
 
-export default profileRouter;
+export default profileRouter

@@ -1,8 +1,5 @@
 import { Router } from 'express'
-import {
-	createOrganization,
-	getOrganizations
-} from '../controllers/organization.controller'
+import { createOrganization, getOrganizations } from '../controllers/organization.controller'
 
 const router = Router()
 

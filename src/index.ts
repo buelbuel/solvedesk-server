@@ -11,7 +11,6 @@ import 'dotenv/config'
 const app = express()
 const port = process.env.PORT || 3000
 
-// Middleware
 app.use(
 	cors({
 		origin: 'http://localhost:5174',
@@ -22,11 +21,8 @@ app.use(
 app.use(helmet())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-
-// Routes
 app.use('/api', routes)
 
-// Database connection
 AppDataSource.initialize()
 	.then(async () => {
 		console.log('Connected to the database')
