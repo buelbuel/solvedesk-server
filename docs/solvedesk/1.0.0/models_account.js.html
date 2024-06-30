@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>models/account.js - Documentation</title>
+
+		<script src="scripts/prettify/prettify.js"></script>
+		<script src="scripts/prettify/lang-css.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="styles/prettify.css" />
+		<link type="text/css" rel="stylesheet" href="styles/jsdoc.css" />
+		<script src="scripts/nav.js" defer></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+		<label for="nav-trigger" class="navicon-button x">
+			<div class="navicon"></div>
+		</label>
+
+		<label for="nav-trigger" class="overlay"></label>
+
+		<nav>
+			<h2><a href="index.html">Home</a></h2>
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="global.html#Account">Account</a></li>
+				<li><a href="AuthService.html">AuthService</a></li>
+				<li><a href="global.html#Contact">Contact</a></li>
+				<li><a href="global.html#ContactSalutation">ContactSalutation</a></li>
+				<li><a href="ContactSalutationService.html">ContactSalutationService</a></li>
+				<li><a href="ContactService.html">ContactService</a></li>
+				<li><a href="global.html#Organization">Organization</a></li>
+				<li><a href="OrganizationService.html">OrganizationService</a></li>
+				<li><a href="ProfileService.html">ProfileService</a></li>
+				<li>
+					<a href="RegisterUserDTO.html">RegisterUserDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="RegisterUserDTO.html#validate">validate</a></li>
+					</ul>
+				</li>
+				<li></li>
+				<li><a href="global.html#Ticket">Ticket</a></li>
+				<li><a href="global.html#TicketCategory">TicketCategory</a></li>
+				<li><a href="TicketCategoryService.html">TicketCategoryService</a></li>
+				<li><a href="global.html#TicketPriority">TicketPriority</a></li>
+				<li><a href="TicketPriorityService.html">TicketPriorityService</a></li>
+				<li><a href="TicketService.html">TicketService</a></li>
+				<li><a href="global.html#TicketStatus">TicketStatus</a></li>
+				<li><a href="TicketStatusService.html">TicketStatusService</a></li>
+				<li><a href="global.html#TicketType">TicketType</a></li>
+				<li><a href="TicketTypeService.html">TicketTypeService</a></li>
+				<li>
+					<a href="global.html#User">User</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="global.html#User#checkIfUnencryptedPasswordIsValid"
+								>checkIfUnencryptedPasswordIsValid</a
+							>
+						</li>
+						<li data-type="method"><a href="global.html#User#hashPassword">hashPassword</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserIdDTO.html">UserIdDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserIdDTO.html#isValid">isValid</a></li>
+					</ul>
+				</li>
+				<li></li>
+				<li><a href="UserService.html">UserService</a></li>
+				<li><a href="module.exports.html">exports</a></li>
+				<li><a href="module.exports_module.exports.html">exports</a></li>
+				<li></li>
+			</ul>
+			<h3>Global</h3>
+			<ul>
+				<li><a href="global.html#authenticateUser">authenticateUser</a></li>
+				<li><a href="global.html#checkJwt">checkJwt</a></li>
+				<li><a href="global.html#checkRole">checkRole</a></li>
+				<li><a href="global.html#createAccount">createAccount</a></li>
+				<li><a href="global.html#createContact">createContact</a></li>
+				<li><a href="global.html#createContactSalutation">createContactSalutation</a></li>
+				<li><a href="global.html#createOrganization">createOrganization</a></li>
+				<li><a href="global.html#createTicket">createTicket</a></li>
+				<li><a href="global.html#createTicketCategory">createTicketCategory</a></li>
+				<li><a href="global.html#createTicketPriority">createTicketPriority</a></li>
+				<li><a href="global.html#createTicketStatus">createTicketStatus</a></li>
+				<li><a href="global.html#createTicketType">createTicketType</a></li>
+				<li><a href="global.html#deleteUser">deleteUser</a></li>
+				<li><a href="global.html#editUser">editUser</a></li>
+				<li><a href="global.html#getAccounts">getAccounts</a></li>
+				<li><a href="global.html#getContactSalutations">getContactSalutations</a></li>
+				<li><a href="global.html#getContacts">getContacts</a></li>
+				<li><a href="global.html#getCurrentUser">getCurrentUser</a></li>
+				<li><a href="global.html#getOneById">getOneById</a></li>
+				<li><a href="global.html#getOrganizations">getOrganizations</a></li>
+				<li><a href="global.html#getTicketCategories">getTicketCategories</a></li>
+				<li><a href="global.html#getTicketPriorities">getTicketPriorities</a></li>
+				<li><a href="global.html#getTicketStatuses">getTicketStatuses</a></li>
+				<li><a href="global.html#getTicketTypes">getTicketTypes</a></li>
+				<li><a href="global.html#getTickets">getTickets</a></li>
+				<li><a href="global.html#getUsers">getUsers</a></li>
+				<li><a href="global.html#pool">pool</a></li>
+				<li><a href="global.html#refreshToken">refreshToken</a></li>
+				<li><a href="global.html#registerUser">registerUser</a></li>
+				<li><a href="global.html#resetPassword">resetPassword</a></li>
+				<li><a href="global.html#roleChecker">roleChecker</a></li>
+			</ul>
+		</nav>
+
+		<div id="main">
+			<h1 class="page-title">models/account.js</h1>
+
+			<section>
+				<article>
+					<pre class="prettyprint source linenums"><code>/**
+ * Represents an account.
+ * @typedef {Object} Account
+ * @property {string} id - The unique identifier of the account.
+ * @property {string} name - The name of the account.
+ * @property {string} description - The description of the account.
+ * @property {string} billingStreet - The street address for billing.
+ * @property {string} billingCity - The city for billing.
+ * @property {string} billingCode - The postal code for billing.
+ * @property {string} billingState - The state or province for billing.
+ * @property {string} billingCountry - The country for billing.
+ * @property {string} mailingStreet - The street address for mailing.
+ * @property {string} mailingCity - The city for mailing.
+ * @property {string} mailingCode - The postal code for mailing.
+ * @property {string} mailingState - The state or province for mailing.
+ * @property {string} mailingCountry - The country for mailing.
+ * @property {string} website - The website URL of the account.
+ * @property {string} phone - The phone number of the account.
+ * @property {Date} createdAt - The date when the account was created.
+ * @property {Date} updatedAt - The date when the account was last updated.
+ * @property {Date} deletedAt - The date when the account was soft-deleted (optional).
+ * @property {string} assignedTo - The ID or name of the user assigned to this account.
+ * @property {Array} contacts - An array of contact IDs or objects associated with this account.
+ * @property {string} createdBy - The ID or name of the user who created this account.
+ * @property {string} updatedBy - The ID or name of the user who last updated this account.
+ */
+
+/**
+ * Represents an account entity.
+ */
+class Account {
+	/**
+	 * Creates an instance of Account.
+	 * @param {string} id - The unique identifier of the account.
+	 * @param {string} name - The name of the account.
+	 * @param {string} description - The description of the account.
+	 * @param {string} billingStreet - The street address for billing.
+	 * @param {string} billingCity - The city for billing.
+	 * @param {string} billingCode - The postal code for billing.
+	 * @param {string} billingState - The state or province for billing.
+	 * @param {string} billingCountry - The country for billing.
+	 * @param {string} mailingStreet - The street address for mailing.
+	 * @param {string} mailingCity - The city for mailing.
+	 * @param {string} mailingCode - The postal code for mailing.
+	 * @param {string} mailingState - The state or province for mailing.
+	 * @param {string} mailingCountry - The country for mailing.
+	 * @param {string} website - The website URL of the account.
+	 * @param {string} phone - The phone number of the account.
+	 * @param {Date} createdAt - The date when the account was created.
+	 * @param {Date} updatedAt - The date when the account was last updated.
+	 * @param {Date} deletedAt - The date when the account was soft-deleted (optional).
+	 * @param {string} assignedTo - The ID or name of the user assigned to this account.
+	 * @param {Array} contacts - An array of contact IDs or objects associated with this account.
+	 * @param {string} createdBy - The ID or name of the user who created this account.
+	 * @param {string} updatedBy - The ID or name of the user who last updated this account.
+	 */
+	constructor(
+		id,
+		name,
+		description,
+		billingStreet,
+		billingCity,
+		billingCode,
+		billingState,
+		billingCountry,
+		mailingStreet,
+		mailingCity,
+		mailingCode,
+		mailingState,
+		mailingCountry,
+		website,
+		phone,
+		createdAt,
+		updatedAt,
+		deletedAt,
+		assignedTo,
+		contacts,
+		createdBy,
+		updatedBy
+	) {
+		this.id = id
+		this.name = name
+		this.description = description
+		this.billingStreet = billingStreet
+		this.billingCity = billingCity
+		this.billingCode = billingCode
+		this.billingState = billingState
+		this.billingCountry = billingCountry
+		this.mailingStreet = mailingStreet
+		this.mailingCity = mailingCity
+		this.mailingCode = mailingCode
+		this.mailingState = mailingState
+		this.mailingCountry = mailingCountry
+		this.website = website
+		this.phone = phone
+		this.createdAt = createdAt
+		this.updatedAt = updatedAt
+		this.deletedAt = deletedAt
+		this.assignedTo = assignedTo
+		this.contacts = contacts
+		this.createdBy = createdBy
+		this.updatedBy = updatedBy
+	}
+}
+
+export default Account
+</code></pre>
+				</article>
+			</section>
+		</div>
+
+		<br class="clear" />
+
+		<footer>
+			Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Sat Jun 29 2024
+			15:33:57 GMT+0000 (Coordinated Universal Time) using the
+			<a href="https://github.com/clenemt/docdash">docdash</a> theme.
+		</footer>
+
+		<script>
+			prettyPrint()
+		</script>
+		<script src="scripts/polyfill.js"></script>
+		<script src="scripts/linenumber.js"></script>
+	</body>
+</html>

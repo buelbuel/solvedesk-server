@@ -1,0 +1,5017 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Global - Documentation</title>
+
+		<script src="scripts/prettify/prettify.js"></script>
+		<script src="scripts/prettify/lang-css.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="styles/prettify.css" />
+		<link type="text/css" rel="stylesheet" href="styles/jsdoc.css" />
+		<script src="scripts/nav.js" defer></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+		<label for="nav-trigger" class="navicon-button x">
+			<div class="navicon"></div>
+		</label>
+
+		<label for="nav-trigger" class="overlay"></label>
+
+		<nav>
+			<h2><a href="index.html">Home</a></h2>
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="global.html#Account">Account</a></li>
+				<li><a href="AuthService.RegisterUserDTO.html">RegisterUserDTO</a></li>
+				<li><a href="AuthService.module.exports.html">module.exports</a></li>
+				<li><a href="global.html#Contact">Contact</a></li>
+				<li><a href="global.html#ContactSalutation">ContactSalutation</a></li>
+				<li><a href="global.html#Organization">Organization</a></li>
+				<li><a href="RegisterUserDTO.RegisterUserDTO.html">RegisterUserDTO</a></li>
+				<li><a href="global.html#Ticket">Ticket</a></li>
+				<li><a href="global.html#TicketCategory">TicketCategory</a></li>
+				<li><a href="global.html#TicketPriority">TicketPriority</a></li>
+				<li><a href="global.html#TicketStatus">TicketStatus</a></li>
+				<li><a href="global.html#TicketType">TicketType</a></li>
+				<li>
+					<a href="global.html#User">User</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="global.html#User#checkIfUnencryptedPasswordIsValid"
+								>checkIfUnencryptedPasswordIsValid</a
+							>
+						</li>
+						<li data-type="method"><a href="global.html#User#hashPassword">hashPassword</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserIdDTO.html">UserIdDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserIdDTO.html#isValid">isValid</a></li>
+					</ul>
+				</li>
+				<li><a href="module.exports_module.exports.html">exports</a></li>
+			</ul>
+			<h3>Modules</h3>
+			<ul>
+				<li><a href="module-IndexRoutes.html">IndexRoutes</a></li>
+				<li><a href="module-OrganizationRoutes.html">OrganizationRoutes</a></li>
+				<li><a href="module-ProfileRoutes.html">ProfileRoutes</a></li>
+				<li><a href="module-TicketCategoryRoutes.html">TicketCategoryRoutes</a></li>
+				<li><a href="module-TicketPriorityRoutes.html">TicketPriorityRoutes</a></li>
+				<li><a href="module-TicketRoutes.html">TicketRoutes</a></li>
+				<li><a href="module-TicketStatusRoutes.html">TicketStatusRoutes</a></li>
+				<li><a href="module-TicketTypeRoutes.html">TicketTypeRoutes</a></li>
+				<li><a href="module-UserRoutes.html">UserRoutes</a></li>
+			</ul>
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="AccountRoutes.html">AccountRoutes</a></li>
+				<li>
+					<a href="AccountService.html">AccountService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="AccountService.html#.createAccount">createAccount</a></li>
+						<li data-type="method"><a href="AccountService.html#.deleteAccount">deleteAccount</a></li>
+						<li data-type="method"><a href="AccountService.html#.getAccountById">getAccountById</a></li>
+						<li data-type="method"><a href="AccountService.html#.getAccounts">getAccounts</a></li>
+						<li data-type="method"><a href="AccountService.html#.updateAccount">updateAccount</a></li>
+					</ul>
+				</li>
+				<li><a href="AuthRoutes.html">AuthRoutes</a></li>
+				<li>
+					<a href="AuthService.html">AuthService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="AuthService.html#.authenticateUser">authenticateUser</a></li>
+						<li data-type="method"><a href="AuthService.html#.refreshToken">refreshToken</a></li>
+						<li data-type="method"><a href="AuthService.html#.registerUser">registerUser</a></li>
+						<li data-type="method"><a href="AuthService.html#.resetPassword">resetPassword</a></li>
+					</ul>
+				</li>
+				<li><a href="ContactRoutes.html">ContactRoutes</a></li>
+				<li><a href="ContactSalutationRoutes.html">ContactSalutationRoutes</a></li>
+				<li>
+					<a href="ContactSalutationService.html">ContactSalutationService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.createContactSalutation">createContactSalutation</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.deleteContactSalutation">deleteContactSalutation</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.getContactSalutationById"
+								>getContactSalutationById</a
+							>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.getContactSalutations">getContactSalutations</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.updateContactSalutation">updateContactSalutation</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ContactService.html">ContactService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="ContactService.html#.createContact">createContact</a></li>
+						<li data-type="method"><a href="ContactService.html#.deleteContact">deleteContact</a></li>
+						<li data-type="method"><a href="ContactService.html#.getContactById">getContactById</a></li>
+						<li data-type="method"><a href="ContactService.html#.getContacts">getContacts</a></li>
+						<li data-type="method"><a href="ContactService.html#.updateContact">updateContact</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="OrganizationService.html">OrganizationService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="OrganizationService.html#.createOrganization">createOrganization</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.deleteOrganization">deleteOrganization</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.getOrganizationById">getOrganizationById</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.getOrganizations">getOrganizations</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.updateOrganization">updateOrganization</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ProfileService.html">ProfileService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="ProfileService.html#.deleteCurrentUser">deleteCurrentUser</a>
+						</li>
+						<li data-type="method"><a href="ProfileService.html#.getCurrentUser">getCurrentUser</a></li>
+						<li data-type="method">
+							<a href="ProfileService.html#.updateCurrentUser">updateCurrentUser</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketCategoryService.html">TicketCategoryService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.createTicketCategory">createTicketCategory</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.deleteTicketCategory">deleteTicketCategory</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.getTicketCategories">getTicketCategories</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.getTicketCategoryById">getTicketCategoryById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.updateTicketCategory">updateTicketCategory</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketPriorityService.html">TicketPriorityService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.createTicketPriority">createTicketPriority</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.deleteTicketPriority">deleteTicketPriority</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.getTicketPriorities">getTicketPriorities</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.getTicketPriorityById">getTicketPriorityById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.updateTicketPriority">updateTicketPriority</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketService.html">TicketService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="TicketService.html#.createTicket">createTicket</a></li>
+						<li data-type="method"><a href="TicketService.html#.deleteTicket">deleteTicket</a></li>
+						<li data-type="method"><a href="TicketService.html#.getTicketById">getTicketById</a></li>
+						<li data-type="method"><a href="TicketService.html#.getTickets">getTickets</a></li>
+						<li data-type="method"><a href="TicketService.html#.updateTicket">updateTicket</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketStatusService.html">TicketStatusService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketStatusService.html#.createTicketStatus">createTicketStatus</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.deleteTicketStatus">deleteTicketStatus</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.getTicketStatusById">getTicketStatusById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.getTicketStatuses">getTicketStatuses</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.updateTicketStatus">updateTicketStatus</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketTypeService.html">TicketTypeService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketTypeService.html#.createTicketType">createTicketType</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.deleteTicketType">deleteTicketType</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.getTicketTypeById">getTicketTypeById</a>
+						</li>
+						<li data-type="method"><a href="TicketTypeService.html#.getTicketTypes">getTicketTypes</a></li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.updateTicketType">updateTicketType</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserService.html">UserService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserService.html#.deleteUser">deleteUser</a></li>
+						<li data-type="method"><a href="UserService.html#.editUser">editUser</a></li>
+						<li data-type="method"><a href="UserService.html#.getOneById">getOneById</a></li>
+						<li data-type="method"><a href="UserService.html#.getUsers">getUsers</a></li>
+					</ul>
+				</li>
+			</ul>
+			<h3>Global</h3>
+			<ul>
+				<li><a href="global.html#AuthenticateUser">AuthenticateUser</a></li>
+				<li><a href="global.html#CreateAccount">CreateAccount</a></li>
+				<li><a href="global.html#CreateContact">CreateContact</a></li>
+				<li><a href="global.html#GetAccounts">GetAccounts</a></li>
+				<li><a href="global.html#GetContacts">GetContacts</a></li>
+				<li><a href="global.html#RefreshToken">RefreshToken</a></li>
+				<li><a href="global.html#RegisterUser">RegisterUser</a></li>
+				<li><a href="global.html#ResetPassword">ResetPassword</a></li>
+				<li><a href="global.html#app">app</a></li>
+				<li><a href="global.html#authenticateUser">authenticateUser</a></li>
+				<li><a href="global.html#checkJwt">checkJwt</a></li>
+				<li><a href="global.html#checkRole">checkRole</a></li>
+				<li><a href="global.html#createAccount">createAccount</a></li>
+				<li><a href="global.html#createContact">createContact</a></li>
+				<li><a href="global.html#createOrganization">createOrganization</a></li>
+				<li><a href="global.html#createTicket">createTicket</a></li>
+				<li><a href="global.html#createTicketCategory">createTicketCategory</a></li>
+				<li><a href="global.html#createTicketPriority">createTicketPriority</a></li>
+				<li><a href="global.html#createTicketStatus">createTicketStatus</a></li>
+				<li><a href="global.html#createTicketType">createTicketType</a></li>
+				<li><a href="global.html#deleteUser">deleteUser</a></li>
+				<li><a href="global.html#editUser">editUser</a></li>
+				<li><a href="global.html#getAccounts">getAccounts</a></li>
+				<li><a href="global.html#getContacts">getContacts</a></li>
+				<li><a href="global.html#getCurrentUser">getCurrentUser</a></li>
+				<li><a href="global.html#getOrganizations">getOrganizations</a></li>
+				<li><a href="global.html#getTicketCategories">getTicketCategories</a></li>
+				<li><a href="global.html#getTicketPriorities">getTicketPriorities</a></li>
+				<li><a href="global.html#getTicketStatuses">getTicketStatuses</a></li>
+				<li><a href="global.html#getTicketTypes">getTicketTypes</a></li>
+				<li><a href="global.html#getTickets">getTickets</a></li>
+				<li><a href="global.html#getUserById">getUserById</a></li>
+				<li><a href="global.html#getUsers">getUsers</a></li>
+				<li><a href="global.html#pool">pool</a></li>
+				<li><a href="global.html#refreshToken">refreshToken</a></li>
+				<li><a href="global.html#registerUser">registerUser</a></li>
+				<li><a href="global.html#resetPassword">resetPassword</a></li>
+				<li><a href="global.html#roleChecker">roleChecker</a></li>
+				<li><a href="global.html#updateCurrentUser">updateCurrentUser</a></li>
+			</ul>
+		</nav>
+
+		<div id="main">
+			<h1 class="page-title">Global</h1>
+
+			<section>
+				<header>
+					<h2></h2>
+				</header>
+
+				<article>
+					<div class="container-overview">
+						<dl class="details"></dl>
+					</div>
+
+					<h3 class="subsection-title">Members</h3>
+
+					<h4 class="name" id="AuthenticateUser">
+						<span class="type-signature"></span>AuthenticateUser<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to authenticate a user. POST /auth/login</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_authRoutes.js.html">routes/authRoutes.js</a>,
+									<a href="routes_authRoutes.js.html#line19">line 19</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to authenticate a user. POST /auth/login</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="CreateAccount">
+						<span class="type-signature"></span>CreateAccount<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to create a new account. POST /accounts/</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_accountRoutes.js.html">routes/accountRoutes.js</a>,
+									<a href="routes_accountRoutes.js.html#line11">line 11</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to create a new account. POST /accounts/</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="CreateContact">
+						<span class="type-signature"></span>CreateContact<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to create a new contact. POST /contacts/</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_contactRoutes.js.html">routes/contactRoutes.js</a>,
+									<a href="routes_contactRoutes.js.html#line11">line 11</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to create a new contact. POST /contacts/</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="GetAccounts">
+						<span class="type-signature"></span>GetAccounts<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to get all accounts. GET /accounts/</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_accountRoutes.js.html">routes/accountRoutes.js</a>,
+									<a href="routes_accountRoutes.js.html#line20">line 20</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to get all accounts. GET /accounts/</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="GetContacts">
+						<span class="type-signature"></span>GetContacts<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to get all contacts. GET /contacts/</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_contactRoutes.js.html">routes/contactRoutes.js</a>,
+									<a href="routes_contactRoutes.js.html#line20">line 20</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to get all contacts. GET /contacts/</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="RefreshToken">
+						<span class="type-signature"></span>RefreshToken<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to refresh token. POST /auth/refresh-token</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_authRoutes.js.html">routes/authRoutes.js</a>,
+									<a href="routes_authRoutes.js.html#line27">line 27</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to refresh token. POST /auth/refresh-token</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="RegisterUser">
+						<span class="type-signature"></span>RegisterUser<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to register a new user. POST /auth/register</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_authRoutes.js.html">routes/authRoutes.js</a>,
+									<a href="routes_authRoutes.js.html#line11">line 11</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to register a new user. POST /auth/register</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="ResetPassword">
+						<span class="type-signature"></span>ResetPassword<span class="type-signature"> :Router</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Route to reset password. POST /auth/reset-password</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="routes_authRoutes.js.html">routes/authRoutes.js</a>,
+									<a href="routes_authRoutes.js.html#line35">line 35</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Route to reset password. POST /auth/reset-password</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Router</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="app">
+						<span class="type-signature type-signature-constant">(constant) </span>app<span
+							class="type-signature"
+						>
+							:Express</span
+						>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates an instance of the Express application.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="index.js.html">index.js</a>, <a href="index.js.html#line23">line 23</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Creates an instance of the Express application.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Express</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="checkRole">
+						<span class="type-signature type-signature-constant">(constant) </span>checkRole<span
+							class="type-signature"
+						></span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Middleware to check user role.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="middlewares_checkRole.js.html">middlewares/checkRole.js</a>,
+									<a href="middlewares_checkRole.js.html#line6">line 6</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Middleware to check user role.</p>
+					</div>
+
+					<h4 class="name" id="pool">
+						<span class="type-signature type-signature-constant">(constant) </span>pool<span
+							class="type-signature"
+						>
+							:Pool</span
+						>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new pool instance to manage PostgreSQL connections.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="database.js.html">database.js</a>,
+									<a href="database.js.html#line13">line 13</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<div class="description usertext">
+						<p>Creates a new pool instance to manage PostgreSQL connections.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Pool</span>
+						</li>
+					</ul>
+
+					<h3 class="subsection-title">Methods</h3>
+
+					<h4 class="name" id="authenticateUser">
+						<span class="type-signature type-signature-async">(async) </span>authenticateUser<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Authenticates a user and returns a JWT token.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_authController.js.html">controllers/authController.js</a>,
+									<a href="controllers_authController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing user credentials in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the JWT token.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the JWT token or an error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="checkJwt">
+						<span class="type-signature"></span>checkJwt<span class="signature">(req, res, next)</span
+						><span class="type-signature"> &rarr; {void}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Middleware to check JWT token.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="middlewares_checkJwt.js.html">middlewares/checkJwt.js</a>,
+									<a href="middlewares_checkJwt.js.html#line7">line 7</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last"><p>The response object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>next</code></td>
+
+								<td class="type">
+									<span class="param-type">function</span>
+								</td>
+
+								<td class="description last"><p>The next middleware function.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">void</span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createAccount">
+						<span class="type-signature type-signature-async">(async) </span>createAccount<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new account.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_accountController.js.html">controllers/accountController.js</a
+									>, <a href="controllers_accountController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing the account data in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send the status and JSON data.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created account or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createContact">
+						<span class="type-signature type-signature-async">(async) </span>createContact<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new contact.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_contactController.js.html">controllers/contactController.js</a
+									>, <a href="controllers_contactController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing contact details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created contact.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created contact or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createContact">
+						<span class="type-signature type-signature-async">(async) </span>createContact<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new contact.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_contactSalutationController.js.html"
+										>controllers/contactSalutationController.js</a
+									>, <a href="controllers_contactSalutationController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing contact details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created contact.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created contact or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createOrganization">
+						<span class="type-signature type-signature-async">(async) </span>createOrganization<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new organization.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_organizationController.js.html"
+										>controllers/organizationController.js</a
+									>, <a href="controllers_organizationController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing organization details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created organization.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created organization or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createTicket">
+						<span class="type-signature type-signature-async">(async) </span>createTicket<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new ticket.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketController.js.html">controllers/ticketController.js</a>,
+									<a href="controllers_ticketController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing ticket details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created ticket.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created ticket or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createTicketCategory">
+						<span class="type-signature type-signature-async">(async) </span>createTicketCategory<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new ticket category.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketCategoryController.js.html"
+										>controllers/ticketCategoryController.js</a
+									>, <a href="controllers_ticketCategoryController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing ticket category details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created ticket category.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created ticket category or
+								an error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createTicketPriority">
+						<span class="type-signature type-signature-async">(async) </span>createTicketPriority<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new ticket priority.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketPriorityController.js.html"
+										>controllers/ticketPriorityController.js</a
+									>, <a href="controllers_ticketPriorityController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing ticket priority details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created ticket priority.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created ticket priority or
+								an error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createTicketStatus">
+						<span class="type-signature type-signature-async">(async) </span>createTicketStatus<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new ticket status.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketStatusController.js.html"
+										>controllers/ticketStatusController.js</a
+									>, <a href="controllers_ticketStatusController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing ticket status details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created ticket status.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created ticket status or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="createTicketType">
+						<span class="type-signature type-signature-async">(async) </span>createTicketType<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Creates a new ticket type.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketTypeController.js.html"
+										>controllers/ticketTypeController.js</a
+									>, <a href="controllers_ticketTypeController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing ticket type details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the created ticket type.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly created ticket type or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="deleteUser">
+						<span class="type-signature type-signature-async">(async) </span>deleteUser<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Deletes a user.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_userController.js.html">controllers/userController.js</a>,
+									<a href="controllers_userController.js.html#line59">line 59</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing the user ID as a parameter.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>
+										The response object used to send back a success status (204 No Content) upon
+										successful deletion.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with a success status or an error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="editUser">
+						<span class="type-signature type-signature-async">(async) </span>editUser<span class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Edits a user.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_userController.js.html">controllers/userController.js</a>,
+									<a href="controllers_userController.js.html#line42">line 42</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>
+										The request object containing the user ID as a parameter and updated user
+										details in the body.
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the updated user details.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the updated user details or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getAccounts">
+						<span class="type-signature type-signature-async">(async) </span>getAccounts<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all accounts.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_accountController.js.html">controllers/accountController.js</a
+									>, <a href="controllers_accountController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send the status and JSON data.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of accounts or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getContacts">
+						<span class="type-signature type-signature-async">(async) </span>getContacts<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all contacts.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_contactController.js.html">controllers/contactController.js</a
+									>, <a href="controllers_contactController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of contacts.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of contacts or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getContacts">
+						<span class="type-signature type-signature-async">(async) </span>getContacts<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all contacts.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_contactSalutationController.js.html"
+										>controllers/contactSalutationController.js</a
+									>, <a href="controllers_contactSalutationController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of contacts.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of contacts or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getCurrentUser">
+						<span class="type-signature type-signature-async">(async) </span>getCurrentUser<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves the current user based on the provided token.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_profileController.js.html">controllers/profileController.js</a
+									>, <a href="controllers_profileController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing the authorization header with the token.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the user information.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the user information or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getOrganizations">
+						<span class="type-signature type-signature-async">(async) </span>getOrganizations<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all organizations.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_organizationController.js.html"
+										>controllers/organizationController.js</a
+									>, <a href="controllers_organizationController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of organizations.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of organizations or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getTicketCategories">
+						<span class="type-signature type-signature-async">(async) </span>getTicketCategories<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all ticket categories.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketCategoryController.js.html"
+										>controllers/ticketCategoryController.js</a
+									>, <a href="controllers_ticketCategoryController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of ticket categories.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of ticket categories or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getTicketPriorities">
+						<span class="type-signature type-signature-async">(async) </span>getTicketPriorities<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all ticket priorities.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketPriorityController.js.html"
+										>controllers/ticketPriorityController.js</a
+									>, <a href="controllers_ticketPriorityController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of ticket priorities.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of ticket priorities or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getTicketStatuses">
+						<span class="type-signature type-signature-async">(async) </span>getTicketStatuses<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all ticket statuses.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketStatusController.js.html"
+										>controllers/ticketStatusController.js</a
+									>, <a href="controllers_ticketStatusController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of ticket statuses.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of ticket statuses or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getTicketTypes">
+						<span class="type-signature type-signature-async">(async) </span>getTicketTypes<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all ticket types.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketTypeController.js.html"
+										>controllers/ticketTypeController.js</a
+									>, <a href="controllers_ticketTypeController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of ticket types.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of ticket types or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getTickets">
+						<span class="type-signature type-signature-async">(async) </span>getTickets<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all tickets with pagination.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_ticketController.js.html">controllers/ticketController.js</a>,
+									<a href="controllers_ticketController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing pagination parameters in the query.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of tickets and total pages.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of tickets and total pages
+								or an error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getUserById">
+						<span class="type-signature type-signature-async">(async) </span>getUserById<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves a user by ID.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_userController.js.html">controllers/userController.js</a>,
+									<a href="controllers_userController.js.html#line22">line 22</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing the user ID as a parameter.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the user details.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the user details or a 'User not
+								found' error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="getUsers">
+						<span class="type-signature type-signature-async">(async) </span>getUsers<span class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Retrieves all users.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_userController.js.html">controllers/userController.js</a>,
+									<a href="controllers_userController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the list of users.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the list of users or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="refreshToken">
+						<span class="type-signature type-signature-async">(async) </span>refreshToken<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Refreshes the JWT token.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_authController.js.html">controllers/authController.js</a>,
+									<a href="controllers_authController.js.html#line42">line 42</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing the token to refresh in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the new token.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the new JWT token or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="registerUser">
+						<span class="type-signature type-signature-async">(async) </span>registerUser<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Registers a new user.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_authController.js.html">controllers/authController.js</a>,
+									<a href="controllers_authController.js.html#line5">line 5</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing user details in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the registered user.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the newly registered user or an error
+								message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="resetPassword">
+						<span class="type-signature type-signature-async">(async) </span>resetPassword<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Resets the user's password.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_authController.js.html">controllers/authController.js</a>,
+									<a href="controllers_authController.js.html#line62">line 62</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>The request object containing user email and new password in the body.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to indicate the password reset status.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response indicating the password reset status or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="roleChecker">
+						<span class="type-signature"></span>roleChecker<span class="signature">(req, res, next)</span
+						><span class="type-signature"> &rarr; {void}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li>
+									<p>
+										Middleware function that checks if the user's role is among the allowed roles.
+									</p>
+								</li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="middlewares_checkRole.js.html">middlewares/checkRole.js</a>,
+									<a href="middlewares_checkRole.js.html#line7">line 7</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last"><p>The request object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last"><p>The response object.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>next</code></td>
+
+								<td class="type">
+									<span class="param-type">function</span>
+								</td>
+
+								<td class="description last"><p>The next middleware function.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">void</span>
+						</dd>
+					</dl>
+
+					<h4 class="name" id="updateCurrentUser">
+						<span class="type-signature type-signature-async">(async) </span>updateCurrentUser<span
+							class="signature"
+							>(req, res)</span
+						><span class="type-signature"> &rarr; {Promise.&lt;void>}</span>
+					</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li>
+									<p>Updates the current user based on the provided token and the request body.</p>
+								</li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="controllers_profileController.js.html">controllers/profileController.js</a
+									>, <a href="controllers_profileController.js.html#line31">line 31</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="h5-parameters">Parameters:</h5>
+
+					<table class="params">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>req</code></td>
+
+								<td class="type">
+									<span class="param-type">Request</span>
+								</td>
+
+								<td class="description last">
+									<p>
+										The request object containing the authorization header with the token and the
+										request body.
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>res</code></td>
+
+								<td class="type">
+									<span class="param-type">Response</span>
+								</td>
+
+								<td class="description last">
+									<p>The response object used to send back the updated user information.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h5 class="h5-returns">Returns:</h5>
+
+					<div class="param-desc">
+						<ul>
+							<li>
+								A promise that resolves to sending a response with the updated user information or an
+								error message.
+							</li>
+						</ul>
+					</div>
+
+					<dl class="param-type">
+						<dt>Type</dt>
+						<dd>
+							<span class="param-type">Promise.&lt;void></span>
+						</dd>
+					</dl>
+
+					<h3 class="subsection-title">Type Definitions</h3>
+
+					<h4 class="name" id="Account">Account</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents an account.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_account.js.html">models/account.js</a>,
+									<a href="models_account.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the account.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the account.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>description</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The description of the account.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingStreet</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The street address for billing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCity</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The city for billing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCode</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The postal code for billing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingState</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The state or province for billing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCountry</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The country for billing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mailingStreet</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The street address for mailing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mailingCity</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The city for mailing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mailingCode</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The postal code for mailing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mailingState</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The state or province for mailing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mailingCountry</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The country for mailing.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>website</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The website URL of the account.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>phone</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The phone number of the account.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the account was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the account was last updated.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the account was soft-deleted (optional).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>assignedTo</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user assigned to this account.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>contacts</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>An array of contact IDs or objects associated with this account.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who created this account.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who last updated this account.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents an account.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="Contact">Contact</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a contact.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_contact.js.html">models/contact.js</a>,
+									<a href="models_contact.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>account</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The account associated with the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>assignedTo</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user assigned to this contact.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>firstName</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The first name of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>lastName</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The last name of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>phone</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The phone number of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>mobile</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The mobile number of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>email</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The email address of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>role</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The role of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the contact was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the contact was last updated.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the contact was soft-deleted (optional).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>An array of ticket IDs or objects associated with this contact.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>title</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The title of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>description</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The description of the contact.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>salutation</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The salutation for the contact (Mr., Ms., etc.).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who created this contact.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who last updated this contact.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a contact.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="ContactSalutation">ContactSalutation</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a contact's salutation.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_contactSalutation.js.html">models/contactSalutation.js</a>,
+									<a href="models_contactSalutation.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The unique identifier of the contact salutation.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the contact salutation.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>letterSalutation</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The letter salutation associated with the contact (e.g., Mr., Ms., Dr.).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the contact salutation was created.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the contact salutation was last updated.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the contact salutation was soft-deleted (optional).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who created this contact salutation.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who last updated this contact salutation.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a contact's salutation.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="Organization">Organization</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents an organization.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_organization.js.html">models/organization.js</a>,
+									<a href="models_organization.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the organization.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the organization.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingStreet</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The street address for billing of the organization.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCode</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The postal code for billing of the organization.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCity</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The city for billing of the organization.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingState</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The state or region for billing of the organization.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>billingCountry</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The country for billing of the organization.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the organization was last updated.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>users</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>An array of users associated with the organization.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>An array of tickets associated with the organization.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last">
+									<p>The ID or name of the user who last updated this organization.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents an organization.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="Ticket">Ticket</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a support ticket.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_ticket.js.html">models/ticket.js</a>,
+									<a href="models_ticket.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>subject</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The subject or title of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>description</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The detailed description of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>email</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The email associated with the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>ticketNumber</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The ticket number or identifier.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>resolvedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket was resolved (if resolved).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket was last updated.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket was deleted (soft delete).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>contact</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The contact associated with the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>priority</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The priority level of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>category</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The category of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>type</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The type or subtype of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>status</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The current status of the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>organization</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The organization associated with the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>assignedTo</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last">
+									<p>The user or entity assigned to handle the ticket.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>closedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The user who closed the ticket (if closed).</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The user who created the ticket.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The user who last updated the ticket.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a support ticket.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="TicketCategory">TicketCategory</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a support ticket's category.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_ticketCategory.js.html">models/ticketCategory.js</a>,
+									<a href="models_ticketCategory.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the ticket category.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the ticket category.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>description</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The description of the ticket category.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>ticketTypes</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>Array of ticket types associated with this category.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last"><p>Array of tickets belonging to this category.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket category was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket category was last updated.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket category was deleted (soft delete).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who created the ticket category.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who last updated the ticket category.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a support ticket's category.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="TicketPriority">TicketPriority</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a support ticket's priority.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_ticketPriority.js.html">models/ticketPriority.js</a>,
+									<a href="models_ticketPriority.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the ticket priority.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the ticket priority.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last"><p>Array of tickets associated with this priority.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket priority was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket priority was last updated.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket priority was deleted (soft delete).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who created the ticket priority.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who last updated the ticket priority.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a support ticket's priority.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="TicketStatus">TicketStatus</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a support ticket's status.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_ticketStatus.js.html">models/ticketStatus.js</a>,
+									<a href="models_ticketStatus.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the ticket status.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the ticket status.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last"><p>Array of tickets associated with this status.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket status was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket status was last updated.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket status was deleted (soft delete).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who created the ticket status.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who last updated the ticket status.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a support ticket's status.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="TicketType">TicketType</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a support ticket's type.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_ticketType.js.html">models/ticketType.js</a>,
+									<a href="models_ticketType.js.html#line1">line 1</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the ticket type.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>name</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The name of the ticket type.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>description</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The description of the ticket type.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>ticketCategory</code></td>
+
+								<td class="type">
+									<span class="param-type">Object</span>
+								</td>
+
+								<td class="description last"><p>The category to which this ticket type belongs.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>tickets</code></td>
+
+								<td class="type">
+									<span class="param-type">Array</span>
+								</td>
+
+								<td class="description last">
+									<p>Array of tickets associated with this ticket type.</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket type was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the ticket type was last updated.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the ticket type was deleted (soft delete).</p>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who created the ticket type.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedBy</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The user who last updated the ticket type.</p></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a support ticket's type.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+
+					<h4 class="name" id="User">User</h4>
+
+					<dl class="details">
+						<dt class="tag-description">Description:</dt>
+						<dd class="tag-description">
+							<ul class="dummy">
+								<li><p>Represents a user.</p></li>
+							</ul>
+						</dd>
+
+						<dt class="tag-source">Source:</dt>
+						<dd class="tag-source">
+							<ul class="dummy">
+								<li>
+									<a href="models_user.js.html">models/user.js</a>,
+									<a href="models_user.js.html#line3">line 3</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<h5 class="subsection-title">Properties:</h5>
+
+					<table class="props">
+						<thead>
+							<tr>
+								<th>Name</th>
+
+								<th>Type</th>
+
+								<th class="last">Description</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td class="name"><code>id</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The unique identifier of the user.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>email</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The email address of the user.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>firstName</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The first name of the user.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>lastName</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The last name of the user.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>role</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The role of the user (e.g., admin, user).</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>password</code></td>
+
+								<td class="type">
+									<span class="param-type">string</span>
+								</td>
+
+								<td class="description last"><p>The hashed password of the user.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>createdAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the user was created.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>updatedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last"><p>The date when the user was last updated.</p></td>
+							</tr>
+
+							<tr>
+								<td class="name"><code>deletedAt</code></td>
+
+								<td class="type">
+									<span class="param-type">Date</span>
+								</td>
+
+								<td class="description last">
+									<p>The date when the user was deleted (soft delete).</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="description usertext">
+						<p>Represents a user.</p>
+					</div>
+
+					<h5 class="h5-types">Type:</h5>
+					<ul>
+						<li>
+							<span class="param-type">Object</span>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+
+		<br class="clear" />
+
+		<footer>
+			Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Sat Jun 29 2024
+			21:48:00 GMT+0000 (Coordinated Universal Time) using the
+			<a href="https://github.com/clenemt/docdash">docdash</a> theme.
+		</footer>
+
+		<script>
+			prettyPrint()
+		</script>
+		<script src="scripts/polyfill.js"></script>
+		<script src="scripts/linenumber.js"></script>
+	</body>
+</html>

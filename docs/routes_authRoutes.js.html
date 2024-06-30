@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>routes/authRoutes.js - Documentation</title>
+
+		<script src="scripts/prettify/prettify.js"></script>
+		<script src="scripts/prettify/lang-css.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="styles/prettify.css" />
+		<link type="text/css" rel="stylesheet" href="styles/jsdoc.css" />
+		<script src="scripts/nav.js" defer></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+		<label for="nav-trigger" class="navicon-button x">
+			<div class="navicon"></div>
+		</label>
+
+		<label for="nav-trigger" class="overlay"></label>
+
+		<nav>
+			<h2><a href="index.html">Home</a></h2>
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="global.html#Account">Account</a></li>
+				<li><a href="AuthService.RegisterUserDTO.html">RegisterUserDTO</a></li>
+				<li><a href="AuthService.module.exports.html">module.exports</a></li>
+				<li><a href="global.html#Contact">Contact</a></li>
+				<li><a href="global.html#ContactSalutation">ContactSalutation</a></li>
+				<li><a href="global.html#Organization">Organization</a></li>
+				<li><a href="RegisterUserDTO.RegisterUserDTO.html">RegisterUserDTO</a></li>
+				<li><a href="global.html#Ticket">Ticket</a></li>
+				<li><a href="global.html#TicketCategory">TicketCategory</a></li>
+				<li><a href="global.html#TicketPriority">TicketPriority</a></li>
+				<li><a href="global.html#TicketStatus">TicketStatus</a></li>
+				<li><a href="global.html#TicketType">TicketType</a></li>
+				<li>
+					<a href="global.html#User">User</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="global.html#User#checkIfUnencryptedPasswordIsValid"
+								>checkIfUnencryptedPasswordIsValid</a
+							>
+						</li>
+						<li data-type="method"><a href="global.html#User#hashPassword">hashPassword</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserIdDTO.html">UserIdDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserIdDTO.html#isValid">isValid</a></li>
+					</ul>
+				</li>
+				<li><a href="module.exports_module.exports.html">exports</a></li>
+			</ul>
+			<h3>Modules</h3>
+			<ul>
+				<li><a href="module-IndexRoutes.html">IndexRoutes</a></li>
+				<li><a href="module-OrganizationRoutes.html">OrganizationRoutes</a></li>
+				<li><a href="module-ProfileRoutes.html">ProfileRoutes</a></li>
+				<li><a href="module-TicketCategoryRoutes.html">TicketCategoryRoutes</a></li>
+				<li><a href="module-TicketPriorityRoutes.html">TicketPriorityRoutes</a></li>
+				<li><a href="module-TicketRoutes.html">TicketRoutes</a></li>
+				<li><a href="module-TicketStatusRoutes.html">TicketStatusRoutes</a></li>
+				<li><a href="module-TicketTypeRoutes.html">TicketTypeRoutes</a></li>
+				<li><a href="module-UserRoutes.html">UserRoutes</a></li>
+			</ul>
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="AccountRoutes.html">AccountRoutes</a></li>
+				<li>
+					<a href="AccountService.html">AccountService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="AccountService.html#.createAccount">createAccount</a></li>
+						<li data-type="method"><a href="AccountService.html#.deleteAccount">deleteAccount</a></li>
+						<li data-type="method"><a href="AccountService.html#.getAccountById">getAccountById</a></li>
+						<li data-type="method"><a href="AccountService.html#.getAccounts">getAccounts</a></li>
+						<li data-type="method"><a href="AccountService.html#.updateAccount">updateAccount</a></li>
+					</ul>
+				</li>
+				<li><a href="AuthRoutes.html">AuthRoutes</a></li>
+				<li>
+					<a href="AuthService.html">AuthService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="AuthService.html#.authenticateUser">authenticateUser</a></li>
+						<li data-type="method"><a href="AuthService.html#.refreshToken">refreshToken</a></li>
+						<li data-type="method"><a href="AuthService.html#.registerUser">registerUser</a></li>
+						<li data-type="method"><a href="AuthService.html#.resetPassword">resetPassword</a></li>
+					</ul>
+				</li>
+				<li><a href="ContactRoutes.html">ContactRoutes</a></li>
+				<li><a href="ContactSalutationRoutes.html">ContactSalutationRoutes</a></li>
+				<li>
+					<a href="ContactSalutationService.html">ContactSalutationService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.createContactSalutation">createContactSalutation</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.deleteContactSalutation">deleteContactSalutation</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.getContactSalutationById"
+								>getContactSalutationById</a
+							>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.getContactSalutations">getContactSalutations</a>
+						</li>
+						<li data-type="method">
+							<a href="ContactSalutationService.html#.updateContactSalutation">updateContactSalutation</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ContactService.html">ContactService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="ContactService.html#.createContact">createContact</a></li>
+						<li data-type="method"><a href="ContactService.html#.deleteContact">deleteContact</a></li>
+						<li data-type="method"><a href="ContactService.html#.getContactById">getContactById</a></li>
+						<li data-type="method"><a href="ContactService.html#.getContacts">getContacts</a></li>
+						<li data-type="method"><a href="ContactService.html#.updateContact">updateContact</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="OrganizationService.html">OrganizationService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="OrganizationService.html#.createOrganization">createOrganization</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.deleteOrganization">deleteOrganization</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.getOrganizationById">getOrganizationById</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.getOrganizations">getOrganizations</a>
+						</li>
+						<li data-type="method">
+							<a href="OrganizationService.html#.updateOrganization">updateOrganization</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ProfileService.html">ProfileService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="ProfileService.html#.deleteCurrentUser">deleteCurrentUser</a>
+						</li>
+						<li data-type="method"><a href="ProfileService.html#.getCurrentUser">getCurrentUser</a></li>
+						<li data-type="method">
+							<a href="ProfileService.html#.updateCurrentUser">updateCurrentUser</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketCategoryService.html">TicketCategoryService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.createTicketCategory">createTicketCategory</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.deleteTicketCategory">deleteTicketCategory</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.getTicketCategories">getTicketCategories</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.getTicketCategoryById">getTicketCategoryById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketCategoryService.html#.updateTicketCategory">updateTicketCategory</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketPriorityService.html">TicketPriorityService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.createTicketPriority">createTicketPriority</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.deleteTicketPriority">deleteTicketPriority</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.getTicketPriorities">getTicketPriorities</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.getTicketPriorityById">getTicketPriorityById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketPriorityService.html#.updateTicketPriority">updateTicketPriority</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketService.html">TicketService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="TicketService.html#.createTicket">createTicket</a></li>
+						<li data-type="method"><a href="TicketService.html#.deleteTicket">deleteTicket</a></li>
+						<li data-type="method"><a href="TicketService.html#.getTicketById">getTicketById</a></li>
+						<li data-type="method"><a href="TicketService.html#.getTickets">getTickets</a></li>
+						<li data-type="method"><a href="TicketService.html#.updateTicket">updateTicket</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketStatusService.html">TicketStatusService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketStatusService.html#.createTicketStatus">createTicketStatus</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.deleteTicketStatus">deleteTicketStatus</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.getTicketStatusById">getTicketStatusById</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.getTicketStatuses">getTicketStatuses</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketStatusService.html#.updateTicketStatus">updateTicketStatus</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="TicketTypeService.html">TicketTypeService</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="TicketTypeService.html#.createTicketType">createTicketType</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.deleteTicketType">deleteTicketType</a>
+						</li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.getTicketTypeById">getTicketTypeById</a>
+						</li>
+						<li data-type="method"><a href="TicketTypeService.html#.getTicketTypes">getTicketTypes</a></li>
+						<li data-type="method">
+							<a href="TicketTypeService.html#.updateTicketType">updateTicketType</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserService.html">UserService</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserService.html#.deleteUser">deleteUser</a></li>
+						<li data-type="method"><a href="UserService.html#.editUser">editUser</a></li>
+						<li data-type="method"><a href="UserService.html#.getOneById">getOneById</a></li>
+						<li data-type="method"><a href="UserService.html#.getUsers">getUsers</a></li>
+					</ul>
+				</li>
+			</ul>
+			<h3>Global</h3>
+			<ul>
+				<li><a href="global.html#AuthenticateUser">AuthenticateUser</a></li>
+				<li><a href="global.html#CreateAccount">CreateAccount</a></li>
+				<li><a href="global.html#CreateContact">CreateContact</a></li>
+				<li><a href="global.html#GetAccounts">GetAccounts</a></li>
+				<li><a href="global.html#GetContacts">GetContacts</a></li>
+				<li><a href="global.html#RefreshToken">RefreshToken</a></li>
+				<li><a href="global.html#RegisterUser">RegisterUser</a></li>
+				<li><a href="global.html#ResetPassword">ResetPassword</a></li>
+				<li><a href="global.html#app">app</a></li>
+				<li><a href="global.html#authenticateUser">authenticateUser</a></li>
+				<li><a href="global.html#checkJwt">checkJwt</a></li>
+				<li><a href="global.html#checkRole">checkRole</a></li>
+				<li><a href="global.html#createAccount">createAccount</a></li>
+				<li><a href="global.html#createContact">createContact</a></li>
+				<li><a href="global.html#createOrganization">createOrganization</a></li>
+				<li><a href="global.html#createTicket">createTicket</a></li>
+				<li><a href="global.html#createTicketCategory">createTicketCategory</a></li>
+				<li><a href="global.html#createTicketPriority">createTicketPriority</a></li>
+				<li><a href="global.html#createTicketStatus">createTicketStatus</a></li>
+				<li><a href="global.html#createTicketType">createTicketType</a></li>
+				<li><a href="global.html#deleteUser">deleteUser</a></li>
+				<li><a href="global.html#editUser">editUser</a></li>
+				<li><a href="global.html#getAccounts">getAccounts</a></li>
+				<li><a href="global.html#getContacts">getContacts</a></li>
+				<li><a href="global.html#getCurrentUser">getCurrentUser</a></li>
+				<li><a href="global.html#getOrganizations">getOrganizations</a></li>
+				<li><a href="global.html#getTicketCategories">getTicketCategories</a></li>
+				<li><a href="global.html#getTicketPriorities">getTicketPriorities</a></li>
+				<li><a href="global.html#getTicketStatuses">getTicketStatuses</a></li>
+				<li><a href="global.html#getTicketTypes">getTicketTypes</a></li>
+				<li><a href="global.html#getTickets">getTickets</a></li>
+				<li><a href="global.html#getUserById">getUserById</a></li>
+				<li><a href="global.html#getUsers">getUsers</a></li>
+				<li><a href="global.html#pool">pool</a></li>
+				<li><a href="global.html#refreshToken">refreshToken</a></li>
+				<li><a href="global.html#registerUser">registerUser</a></li>
+				<li><a href="global.html#resetPassword">resetPassword</a></li>
+				<li><a href="global.html#roleChecker">roleChecker</a></li>
+				<li><a href="global.html#updateCurrentUser">updateCurrentUser</a></li>
+			</ul>
+		</nav>
+
+		<div id="main">
+			<h1 class="page-title">routes/authRoutes.js</h1>
+
+			<section>
+				<article>
+					<pre class="prettyprint source linenums"><code>import { Router } from 'express'
+import { checkJwt } from '../middlewares/checkJwt.js'
+import { registerUser, authenticateUser, refreshToken, resetPassword } from '../controllers/authController.js'
+
+/**
+ * @namespace AuthRoutes
+ * @type {Router}
+ */
+const router = Router()
+
+/**
+ * Route to register a new user.
+ * POST /auth/register
+ * @type {Router}
+ * @name RegisterUser
+ */
+router.post('/register', registerUser)
+
+/**
+ * Route to authenticate a user.
+ * POST /auth/login
+ * @type {Router}
+ * @name AuthenticateUser
+ */
+router.post('/login', authenticateUser)
+
+/**
+ * Route to refresh token.
+ * POST /auth/refresh-token
+ * @type {Router}
+ * @name RefreshToken
+ */
+router.post('/refresh-token', refreshToken)
+
+/**
+ * Route to reset password.
+ * POST /auth/reset-password
+ * @type {Router}
+ * @param {string} Authorization - The JWT token
+ * @name ResetPassword
+ */
+router.post('/reset-password', [checkJwt], resetPassword)
+
+export default router
+</code></pre>
+				</article>
+			</section>
+		</div>
+
+		<br class="clear" />
+
+		<footer>
+			Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Sat Jun 29 2024
+			21:48:00 GMT+0000 (Coordinated Universal Time) using the
+			<a href="https://github.com/clenemt/docdash">docdash</a> theme.
+		</footer>
+
+		<script>
+			prettyPrint()
+		</script>
+		<script src="scripts/polyfill.js"></script>
+		<script src="scripts/linenumber.js"></script>
+	</body>
+</html>

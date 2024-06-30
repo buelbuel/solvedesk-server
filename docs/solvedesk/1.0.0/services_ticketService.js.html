@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>services/ticketService.js - Documentation</title>
+
+		<script src="scripts/prettify/prettify.js"></script>
+		<script src="scripts/prettify/lang-css.js"></script>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="styles/prettify.css" />
+		<link type="text/css" rel="stylesheet" href="styles/jsdoc.css" />
+		<script src="scripts/nav.js" defer></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+		<label for="nav-trigger" class="navicon-button x">
+			<div class="navicon"></div>
+		</label>
+
+		<label for="nav-trigger" class="overlay"></label>
+
+		<nav>
+			<h2><a href="index.html">Home</a></h2>
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="global.html#Account">Account</a></li>
+				<li><a href="AuthService.html">AuthService</a></li>
+				<li><a href="global.html#Contact">Contact</a></li>
+				<li><a href="global.html#ContactSalutation">ContactSalutation</a></li>
+				<li><a href="ContactSalutationService.html">ContactSalutationService</a></li>
+				<li><a href="ContactService.html">ContactService</a></li>
+				<li><a href="global.html#Organization">Organization</a></li>
+				<li><a href="OrganizationService.html">OrganizationService</a></li>
+				<li><a href="ProfileService.html">ProfileService</a></li>
+				<li>
+					<a href="RegisterUserDTO.html">RegisterUserDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="RegisterUserDTO.html#validate">validate</a></li>
+					</ul>
+				</li>
+				<li></li>
+				<li><a href="global.html#Ticket">Ticket</a></li>
+				<li><a href="global.html#TicketCategory">TicketCategory</a></li>
+				<li><a href="TicketCategoryService.html">TicketCategoryService</a></li>
+				<li><a href="global.html#TicketPriority">TicketPriority</a></li>
+				<li><a href="TicketPriorityService.html">TicketPriorityService</a></li>
+				<li><a href="TicketService.html">TicketService</a></li>
+				<li><a href="global.html#TicketStatus">TicketStatus</a></li>
+				<li><a href="TicketStatusService.html">TicketStatusService</a></li>
+				<li><a href="global.html#TicketType">TicketType</a></li>
+				<li><a href="TicketTypeService.html">TicketTypeService</a></li>
+				<li>
+					<a href="global.html#User">User</a>
+					<ul class="methods">
+						<li data-type="method">
+							<a href="global.html#User#checkIfUnencryptedPasswordIsValid"
+								>checkIfUnencryptedPasswordIsValid</a
+							>
+						</li>
+						<li data-type="method"><a href="global.html#User#hashPassword">hashPassword</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="UserIdDTO.html">UserIdDTO</a>
+					<ul class="methods">
+						<li data-type="method"><a href="UserIdDTO.html#isValid">isValid</a></li>
+					</ul>
+				</li>
+				<li></li>
+				<li><a href="UserService.html">UserService</a></li>
+				<li><a href="module.exports.html">exports</a></li>
+				<li><a href="module.exports_module.exports.html">exports</a></li>
+				<li></li>
+			</ul>
+			<h3>Global</h3>
+			<ul>
+				<li><a href="global.html#authenticateUser">authenticateUser</a></li>
+				<li><a href="global.html#checkJwt">checkJwt</a></li>
+				<li><a href="global.html#checkRole">checkRole</a></li>
+				<li><a href="global.html#createAccount">createAccount</a></li>
+				<li><a href="global.html#createContact">createContact</a></li>
+				<li><a href="global.html#createContactSalutation">createContactSalutation</a></li>
+				<li><a href="global.html#createOrganization">createOrganization</a></li>
+				<li><a href="global.html#createTicket">createTicket</a></li>
+				<li><a href="global.html#createTicketCategory">createTicketCategory</a></li>
+				<li><a href="global.html#createTicketPriority">createTicketPriority</a></li>
+				<li><a href="global.html#createTicketStatus">createTicketStatus</a></li>
+				<li><a href="global.html#createTicketType">createTicketType</a></li>
+				<li><a href="global.html#deleteUser">deleteUser</a></li>
+				<li><a href="global.html#editUser">editUser</a></li>
+				<li><a href="global.html#getAccounts">getAccounts</a></li>
+				<li><a href="global.html#getContactSalutations">getContactSalutations</a></li>
+				<li><a href="global.html#getContacts">getContacts</a></li>
+				<li><a href="global.html#getCurrentUser">getCurrentUser</a></li>
+				<li><a href="global.html#getOneById">getOneById</a></li>
+				<li><a href="global.html#getOrganizations">getOrganizations</a></li>
+				<li><a href="global.html#getTicketCategories">getTicketCategories</a></li>
+				<li><a href="global.html#getTicketPriorities">getTicketPriorities</a></li>
+				<li><a href="global.html#getTicketStatuses">getTicketStatuses</a></li>
+				<li><a href="global.html#getTicketTypes">getTicketTypes</a></li>
+				<li><a href="global.html#getTickets">getTickets</a></li>
+				<li><a href="global.html#getUsers">getUsers</a></li>
+				<li><a href="global.html#pool">pool</a></li>
+				<li><a href="global.html#refreshToken">refreshToken</a></li>
+				<li><a href="global.html#registerUser">registerUser</a></li>
+				<li><a href="global.html#resetPassword">resetPassword</a></li>
+				<li><a href="global.html#roleChecker">roleChecker</a></li>
+			</ul>
+		</nav>
+
+		<div id="main">
+			<h1 class="page-title">services/ticketService.js</h1>
+
+			<section>
+				<article>
+					<pre class="prettyprint source linenums"><code>import pool from '../database.js'
+import Ticket from '../models/ticket.js'
+
+/**
+ * Service to handle ticket-related operations.
+ * @class TicketService
+ */
+export default class TicketService {
+	/**
+	 * Creates a new ticket.
+	 * @param {Object} data - The ticket data.
+	 * @param {string} data.title - The title of the ticket.
+	 * @param {string} data.description - The description of the ticket.
+	 * @param {string} data.status - The status of the ticket.
+	 * @param {string} data.priority - The priority of the ticket.
+	 * @param {string} data.assigneeId - The ID of the assignee.
+	 * @returns {Promise&lt;Ticket>} The created ticket.
+	 */
+	async createTicket(data) {
+		const { title, description, status, priority, assigneeId } = data
+		const { rows } = await pool.query(
+			'INSERT INTO tickets (title, description, status, priority, assigneeId) VALUES ($1, $2, $3, $4, $5) RETURNING *',
+			[title, description, status, priority, assigneeId]
+		)
+		const ticketData = rows[0]
+		return new Ticket(
+			ticketData.id,
+			ticketData.title,
+			ticketData.description,
+			ticketData.status,
+			ticketData.priority,
+			ticketData.assigneeId,
+			ticketData.createdAt,
+			ticketData.updatedAt,
+			ticketData.deletedAt
+		)
+	}
+
+	/**
+	 * Retrieves all tickets with pagination.
+	 * @param {number} [page=1] - The page number.
+	 * @param {number} [pageSize=20] - The number of tickets per page.
+	 * @returns {Promise&lt;{ tickets: Array&lt;Ticket>, totalPages: number }>} The tickets and total pages.
+	 */
+	async getTickets(page = 1, pageSize = 20) {
+		const offset = (page - 1) * pageSize
+		const { rows: tickets } = await pool.query('SELECT * FROM tickets LIMIT $1 OFFSET $2', [pageSize, offset])
+		const {
+			rows: [{ count }]
+		} = await pool.query('SELECT COUNT(*) FROM tickets')
+		const totalPages = Math.ceil(count / pageSize)
+		return { tickets, totalPages }
+	}
+}
+</code></pre>
+				</article>
+			</section>
+		</div>
+
+		<br class="clear" />
+
+		<footer>
+			Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Sat Jun 29 2024
+			15:33:57 GMT+0000 (Coordinated Universal Time) using the
+			<a href="https://github.com/clenemt/docdash">docdash</a> theme.
+		</footer>
+
+		<script>
+			prettyPrint()
+		</script>
+		<script src="scripts/polyfill.js"></script>
+		<script src="scripts/linenumber.js"></script>
+	</body>
+</html>
