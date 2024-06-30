@@ -39,8 +39,8 @@
 		"docdash": "^2.0.2",
 		"eslint": "^9.6.0",
 		"globals": "^15.6.0",
-		"jsdoc": "^4.0.3",
-		"prettier": "^3.3.2",
+		"jsdoc": "latest",
+		"prettier": "next",
 		"esbuild": "latest"
 	}
 }
