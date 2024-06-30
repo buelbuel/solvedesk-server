@@ -1,14 +1,26 @@
 {
-	"name": "solvedesk",
+	"name": "solvedesk-server",
+	"description": "This project is a backend server for a helpdesk application built with Node.js and Express.",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "src/index.js",
 	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/buelbuel/solvedesk-client.git"
+	},
+	"author": "Alicem Bülbül",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/buelbuel/solvedesk-server/issues"
+	},
+	"homepage": "https://github.com/buelbuel/solvedesk-server#readme",
 	"scripts": {
-		"start": "node src/index.js",
-		"dev": "nodemon src/index.js",
+		"build": "esbuild src/index.js --bundle --outfile=dist/index.cjs --minify --platform=node --packages=external --format=cjs",
+		"watch": "npm run build -- --watch",
+		"dev": "nodemon --watch dist dist/index.cjs",
 		"docs": "jsdoc --configure jsdoc.config.json",
-		"prettier": "prettier --write .",
-		"lint": "eslint --ignore-pattern 'docs/**/*'"
+		"format": "prettier . '!dist/**' '!docs/**' --write",
+		"lint": "eslint --ignore-pattern 'docs/**/*' --ignore-pattern 'dist/**/*'"
 	},
 	"dependencies": {
 		"bcrypt": "^5.1.1",
@@ -23,13 +35,12 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.6.0",
-		"clean-jsdoc-theme": "^4.3.0",
-		"concurrently": "^8.2.2",
+		"nodemon": "^2.0.22",
 		"docdash": "^2.0.2",
 		"eslint": "^9.6.0",
 		"globals": "^15.6.0",
 		"jsdoc": "^4.0.3",
-		"nodemon": "^2.0.22",
-		"prettier": "^3.3.2"
+		"prettier": "^3.3.2",
+		"esbuild": "latest"
 	}
 }
